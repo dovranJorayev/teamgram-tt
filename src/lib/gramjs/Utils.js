@@ -630,6 +630,8 @@ function isListLike(item) {
     )
 }
 */
+
+
 /**
  * Returns the appropriate DC based on the id
  * @param dcId the id of the DC.
@@ -643,8 +645,8 @@ function getDC(dcId, downloadDC = false) {
         case 1:
             return {
                 id: 1,
-                ipAddress: `web.teamgram.net`,
-                port: 443,
+                ipAddress: process.env.DC_IP,
+                port: Number(process.env.DC_PORT),
             };
         // case 1:
         //     return {
