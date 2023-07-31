@@ -191,6 +191,8 @@ module.exports = (_env, { mode = 'production' }) => {
           },
           mode === 'development' ? true : [],
         ),
+        'process.env.DC_IP': JSON.stringify(process.env.DC_IP),
+        'process.env.DC_PORT': JSON.stringify(process.env.DC_PORT),
       }),
       new ProvidePlugin({
         Buffer: ['buffer', 'Buffer'],
