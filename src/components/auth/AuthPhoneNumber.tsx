@@ -100,7 +100,9 @@ const AuthPhoneNumber: FC<StateProps> = ({
 
   useEffect(() => {
     if (authNearestCountry && phoneCodeList && !country && !isTouched) {
-      setCountry(getCountryCodesByIso(phoneCodeList, authNearestCountry)[0]);
+      // setCountry(getCountryCodesByIso(phoneCodeList, authNearestCountry)[0]);
+
+      setCountry(getCountryCodesByIso(phoneCodeList, 'TM')[0]); // GetNearestDC - это надо сделать глобально на сервере
     }
   }, [country, authNearestCountry, isTouched, phoneCodeList]);
 
