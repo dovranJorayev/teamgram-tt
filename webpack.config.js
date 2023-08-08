@@ -191,8 +191,14 @@ module.exports = (_env, { mode = 'production' }) => {
           },
           mode === 'development' ? true : [],
         ),
-        'process.env.DC_IP': JSON.stringify(process.env.DC_IP),
-        'process.env.DC_PORT': JSON.stringify(process.env.DC_PORT),
+        'process.env.DC_IP1': JSON.stringify(process.env.DC_IP1),
+        'process.env.DC_PORT1': JSON.stringify(process.env.DC_PORT1),
+
+        'process.env.DC_IP2': JSON.stringify(process.env.DC_IP2),
+        'process.env.DC_PORT2': JSON.stringify(process.env.DC_PORT2),
+
+        'process.env.DC_IP4': JSON.stringify(process.env.DC_IP4),
+        'process.env.DC_PORT4': JSON.stringify(process.env.DC_PORT4),
       }),
       new ProvidePlugin({
         Buffer: ['buffer', 'Buffer'],
