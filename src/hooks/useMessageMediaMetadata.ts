@@ -29,7 +29,8 @@ const useMessageMediaMetadata = (
   const { audio, voice } = getMessageContent(message);
   const title = audio ? (audio.title || audio.fileName) : voice ? 'Voice message' : '';
   const artist = audio?.performer || (sender && getSenderTitle(lang, sender));
-  const album = (chat && getChatTitle(lang, chat)) || 'Telegram';
+  // const album = (chat && getChatTitle(lang, chat)) || 'Telegram';
+  const album = (chat && getChatTitle(lang, chat)) || 'Start';
 
   const audioCoverHash = (audio && getAudioHasCover(audio) && getMessageMediaHash(message, 'pictogram'));
   const avatarHash = sender && getChatAvatarHash(sender, 'big');

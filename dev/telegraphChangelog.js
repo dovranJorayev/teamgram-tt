@@ -41,7 +41,7 @@ updateChangelog();
 async function updateTelegraph(dom) {
   const api = new Telegraph();
   const content = domToNode(dom.window.document.body).children;
-  const result = await api.editPage(AUTH_TOKEN, 'WebZ-Beta-04-01', 'Telegram WebZ Beta Changelog', content, {
+  const result = await api.editPage(AUTH_TOKEN, 'WebZ-Beta-04-01', 'Start WebZ Beta Changelog', content, {
     author_name: 'WebZ team',
     author_url: 'https://t.me/webztalks',
   });

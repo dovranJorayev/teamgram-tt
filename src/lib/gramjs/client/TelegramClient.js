@@ -1008,7 +1008,9 @@ class TelegramClient {
                     e.message === "RPC_MCGET_FAIL"
                 ) {
                     this._log.warn(
-                        `Telegram is having internal issues ${e.constructor.name}`
+                        // `Telegram is having internal issues ${e.constructor.name}`
+                        `Start is having internal issues ${e.constructor.name}`
+
                     );
                     await sleep(2000);
                 } else if (
