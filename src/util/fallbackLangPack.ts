@@ -37,7 +37,9 @@ export default {
   },
   TelegramFeatures: {
     key: 'TelegramFeatures',
-    value: 'Teamgram Features',
+    // value: 'Teamgram Features',
+    value: 'Start Features',
+
   },
   AccDescrOpenMenu2: {
     key: 'AccDescrOpenMenu2',
@@ -510,7 +512,8 @@ export default {
   },
   UsernameHelp: {
     key: 'UsernameHelp',
-    value: 'You can choose a username on **Teamgram**. If you do, people will be able to find you by this username and contact you without needing your phone number.\n\nYou can use **a–z**, **0–9** and underscores. Minimum length is **5** characters.',
+    // value: 'You can choose a username on **Teamgram**. If you do, people will be able to find you by this username and contact you without needing your phone number.\n\nYou can use **a–z**, **0–9** and underscores. Minimum length is **5** characters.',
+    value: 'You can choose a username on **Start**. If you do, people will be able to find you by this username and contact you without needing your phone number.\n\nYou can use **a–z**, **0–9** and underscores. Minimum length is **5** characters.',
   },
   lng_username_link: {
     key: 'lng_username_link',
@@ -777,7 +780,8 @@ export default {
   },
   ContactJoined: {
     key: 'ContactJoined',
-    value: 'Contact joined Teamgram',
+    // value: 'Contact joined Teamgram',
+    value: 'Contact joined Start',
   },
   'UserInfo.NotificationsDisabled': {
     key: 'UserInfo.NotificationsDisabled',
@@ -833,7 +837,8 @@ export default {
   },
   lng_settings_sensitive_about: {
     key: 'lng_settings_sensitive_about',
-    value: 'Display sensitive media in public channels on all your Teamgram devices.',
+    // value: 'Display sensitive media in public channels on all your Teamgram devices.',
+    value: 'Display sensitive media in public channels on all your Start devices.',
   },
   P2PContacts: {
     key: 'P2PContacts',
@@ -860,7 +865,8 @@ export default {
   },
   EnabledPasswordText: {
     key: 'EnabledPasswordText',
-    value: 'You have enabled Two-Step verification.\nYou\'ll need the password you set up here to log in to your Teamgram account.',
+    // value: 'You have enabled Two-Step verification.\nYou\'ll need the password you set up here to log in to your Teamgram account.',
+    value: "You have enabled Two-Step verification.\nYou'll need the password you set up here to log in to your Start account.",
   },
   ChangePassword: {
     key: 'ChangePassword',
@@ -1276,7 +1282,8 @@ export default {
   },
   'Channel.Username.CreatePublicLinkHelp': {
     key: 'Channel.Username.CreatePublicLinkHelp',
-    value: 'People can share this link with others and find your channel using Teamgram search.',
+    // value: 'People can share this link with others and find your channel using Teamgram search.',
+    value: 'People can share this link with others and find your channel using Start search.',
   },
   SetUrlPlaceholder: {
     key: 'SetUrlPlaceholder',
@@ -1463,7 +1470,8 @@ export default {
   },
   'Group.Username.CreatePublicLinkHelp': {
     key: 'Group.Username.CreatePublicLinkHelp',
-    value: 'People can share this link with others and find your group using Teamgram search.',
+    // value: 'People can share this link with others and find your group using Teamgram search.',
+    value: 'People can share this link with others and find your group using Start search.',
   },
   MegaPrivateLinkHelp: {
     key: 'MegaPrivateLinkHelp',
@@ -1707,11 +1715,13 @@ export default {
   },
   lng_update_telegram: {
     key: 'lng_update_telegram',
-    value: 'Update Teamgram',
+    // value: 'Update Teamgram',
+    value: 'Update Start',
   },
   'Login.QR.Title': {
     key: 'Login.QR.Title',
-    value: 'Log in to Teamgram by QR Code',
+    // value: 'Log in to Teamgram by QR Code',
+    value: 'Log in to Start by QR Code',
   },
   PHONE_NUMBER_INVALID: {
     key: 'PHONE_NUMBER_INVALID',
@@ -1731,7 +1741,8 @@ export default {
   },
   SentAppCode: {
     key: 'SentAppCode',
-    value: 'We\'ve sent the code to the **Teamgram** app on your other device.',
+    // value: "We've sent the code to the **Teamgram** app on your other device.",
+    value: "We've sent the code to the **Start** app on your other device.",
   },
   'Login.JustSentSms': {
     key: 'Login.JustSentSms',
@@ -1767,7 +1778,8 @@ export default {
   },
   'Login.QR.Help1': {
     key: 'Login.QR.Help1',
-    value: 'Open Teamgram on your phone',
+    // value: 'Open Teamgram on your phone',
+    value: 'Open Start on your phone',
   },
   'Login.QR.Help2': {
     key: 'Login.QR.Help2',
@@ -1851,7 +1863,8 @@ export default {
   },
   'Settings.TipsUsername': {
     key: 'Settings.TipsUsername',
-    value: 'TeamgramTips',
+    // value: 'TeamgramTips',
+    value: 'StartTips',
   },
   FoldersAllChatsDesc: {
     key: 'FoldersAllChatsDesc',

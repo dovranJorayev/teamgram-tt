@@ -19,7 +19,8 @@ const { HEAD, APP_ENV = 'production', APP_MOCKED_CLIENT = '' } = process.env;
 
 dotenv.config();
 
-const DEFAULT_APP_TITLE = `Teamgram${APP_ENV !== 'production' ? ' Beta' : ''}`;
+// const DEFAULT_APP_TITLE = `Teamgram${APP_ENV !== 'production' ? ' Beta' : ''}`;
+const DEFAULT_APP_TITLE = `Start${APP_ENV !== 'production' ? ' Beta' : ''}`;
 
 const {
   BASE_URL = 'https://web.teamgram.net/z/',

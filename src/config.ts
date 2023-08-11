@@ -1,6 +1,8 @@
 import type { ApiLimitType } from './global/types';
 
-export const APP_NAME = process.env.APP_NAME || 'Teamgram WebZ';
+// export const APP_NAME = process.env.APP_NAME || 'Teamgram WebZ';
+export const APP_NAME = process.env.APP_NAME || 'Start WebZ';
+
 export const APP_VERSION = process.env.APP_VERSION!;
 export const RELEASE_DATETIME = process.env.RELEASE_DATETIME;
 
@@ -215,7 +217,8 @@ export const CONTENT_TYPES_WITH_PREVIEW = new Set([
   ...SUPPORTED_VIDEO_CONTENT_TYPES,
 ]);
 
-export const CONTENT_NOT_SUPPORTED = 'The message is not supported on this version of Teamgram.';
+// export const CONTENT_NOT_SUPPORTED = 'The message is not supported on this version of Teamgram.';
+export const CONTENT_NOT_SUPPORTED = 'The message is not supported on this version of Start.';
 
 // Taken from https://github.com/telegramdesktop/tdesktop/blob/41d9a9fcbd0c809c60ddbd9350791b1436aff7d9/Telegram/SourceFiles/ui/boxes/choose_language_box.cpp#L28
 export const SUPPORTED_TRANSLATION_LANGUAGES = [
@@ -281,6 +284,7 @@ export const GROUP_CALL_DEFAULT_VOLUME = 100 * GROUP_CALL_VOLUME_MULTIPLIER;
 export const GROUP_CALL_THUMB_VIDEO_DISABLED = true;
 
 export const DEFAULT_LIMITS: Record<ApiLimitType, readonly [number, number]> = {
+  // uploadMaxFileparts: [4000, 8000],
   uploadMaxFileparts: [4000, 8000],
   stickersFaved: [5, 10],
   savedGifs: [200, 400],
