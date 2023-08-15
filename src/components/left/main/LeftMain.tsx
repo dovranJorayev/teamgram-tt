@@ -8,9 +8,9 @@ import { LeftColumnContent } from '../../../types';
 import type { FolderEditDispatch } from '../../../hooks/reducers/useFoldersReducer';
 
 import { IS_TOUCH_ENV } from '../../../util/windowEnvironment';
-import buildClassName from '../../../util/buildClassName';
-import useShowTransition from '../../../hooks/useShowTransition';
-import useLang from '../../../hooks/useLang';
+// import buildClassName from '../../../util/buildClassName';
+// import useShowTransition from '../../../hooks/useShowTransition';
+// import useLang from '../../../hooks/useLang';
 import useForumPanelRender from '../../../hooks/useForumPanelRender';
 
 import Transition from '../../ui/Transition';
@@ -19,7 +19,7 @@ import ChatFolders from './ChatFolders';
 import LeftSearch from '../search/LeftSearch.async';
 import ContactList from './ContactList.async';
 import NewChatButton from '../NewChatButton';
-import Button from '../../ui/Button';
+// import Button from '../../ui/Button';
 import ForumPanel from './ForumPanel';
 
 import './LeftMain.scss';
@@ -55,7 +55,7 @@ const LeftMain: FC<OwnProps> = ({
   contactsFilter,
   shouldSkipTransition,
   foldersDispatch,
-  isUpdateAvailable,
+  // isUpdateAvailable,
   isForumPanelOpen,
   onSearchQuery,
   onContentChange,
@@ -69,10 +69,10 @@ const LeftMain: FC<OwnProps> = ({
   const { shouldRenderForumPanel, handleForumPanelAnimationEnd } = useForumPanelRender(isForumPanelOpen);
   const isForumPanelVisible = isForumPanelOpen && content === LeftColumnContent.ChatList;
 
-  const {
-    shouldRender: shouldRenderUpdateButton,
-    transitionClassNames: updateButtonClassNames,
-  } = useShowTransition(isUpdateAvailable);
+  // const {
+  //   shouldRender: shouldRenderUpdateButton,
+  //   transitionClassNames: updateButtonClassNames,
+  // } = useShowTransition(isUpdateAvailable);
 
   const isMouseInside = useRef(false);
 
@@ -112,9 +112,9 @@ const LeftMain: FC<OwnProps> = ({
     closeForumPanel();
   }, [closeForumPanel, onContentChange]);
 
-  const handleUpdateClick = useCallback(() => {
-    window.location.reload();
-  }, []);
+  // const handleUpdateClick = useCallback(() => {
+  //   window.location.reload();
+  // }, []);
 
   const handleSelectNewChannel = useCallback(() => {
     onContentChange(LeftColumnContent.NewChannelStep1);
@@ -142,7 +142,7 @@ const LeftMain: FC<OwnProps> = ({
     };
   }, [content]);
 
-  const lang = useLang();
+  // const lang = useLang();
 
   return (
     <div
@@ -196,7 +196,7 @@ const LeftMain: FC<OwnProps> = ({
           }
         }}
       </Transition>
-      {shouldRenderUpdateButton && (
+      {/* {shouldRenderUpdateButton && (
         <Button
           fluid
           pill
@@ -205,7 +205,7 @@ const LeftMain: FC<OwnProps> = ({
         >
           {lang('lng_update_telegram')}
         </Button>
-      )}
+      )} */}
       {shouldRenderForumPanel && (
         <ForumPanel
           isOpen={isForumPanelOpen}

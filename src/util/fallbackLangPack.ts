@@ -1713,11 +1713,11 @@ export default {
     key: 'Chat.Quiz.TotalVotesEmpty',
     value: 'No answers yet',
   },
-  lng_update_telegram: {
-    key: 'lng_update_telegram',
-    // value: 'Update Teamgram',
-    value: 'Update Start',
-  },
+  // lng_update_telegram: {
+  //   key: 'lng_update_telegram',
+  //   // value: 'Update Teamgram',
+  //   value: 'Update Start',
+  // },
   'Login.QR.Title': {
     key: 'Login.QR.Title',
     // value: 'Log in to Teamgram by QR Code',
