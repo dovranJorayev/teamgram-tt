@@ -65,10 +65,12 @@ class PromisedWebSockets {
 
     getWebSocketLink(ip, port, testServers, isPremium) {
         // NOTE: This is a temporary fix for running app
-        if (Math.random() < 9999) {
-            return `ws://${ip}:${process.env.DC_PORT1}/apiws${testServers ? '_test' : ''}${isPremium ? '' : ''}`;
-        }
-        if (port === 443) {
+        // if (Math.random() < 9999) {
+        //     return `ws://${ip}:${process.env.DC_PORT1}/apiws${testServers ? '_test' : ''}${isPremium ? '' : ''}`;
+        // }
+        // return `wss://${ip}:${port}/apiws${testServers ? '_test' : ''}${isPremium ? '' : ''}`;
+
+        if (port === 11444) {
             // return `wss://${ip}:${port}/apiws${testServers ? '_test' : ''}${isPremium ? '_premium' : ''}`;
             return `wss://${ip}:${port}/apiws${testServers ? '_test' : ''}${isPremium ? '' : ''}`;
         } else {
