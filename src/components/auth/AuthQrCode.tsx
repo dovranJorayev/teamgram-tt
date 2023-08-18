@@ -8,7 +8,7 @@ import type { GlobalState } from '../../global/types';
 import type { LangCode } from '../../types';
 
 import { DEFAULT_LANG_CODE } from '../../config';
-import { LOCAL_TGS_URLS } from '../common/helpers/animatedAssets';
+// import { LOCAL_TGS_URLS } from '../common/helpers/animatedAssets';
 import { setLanguage } from '../../util/langProvider';
 import buildClassName from '../../util/buildClassName';
 import renderText from '../common/helpers/renderText';
@@ -22,7 +22,8 @@ import useAsync from '../../hooks/useAsync';
 
 import Loading from '../ui/Loading';
 import Button from '../ui/Button';
-import AnimatedIcon from '../common/AnimatedIcon';
+// import AnimatedIcon from '../common/AnimatedIcon';
+import startIcon from '../../../public/favicon.svg';
 
 import blankUrl from '../../assets/blank.png';
 
@@ -149,13 +150,19 @@ const AuthCode: FC<StateProps> = ({
               ref={qrCodeRef}
               style={`width: ${QR_SIZE}px; height: ${QR_SIZE}px`}
             />
-            <AnimatedIcon
+            <img
+              src={startIcon}
+              alt="start-icon"
+              width={QR_PLANE_SIZE}
+              className="qr-plane"
+            />
+            {/* <AnimatedIcon
               tgsUrl={LOCAL_TGS_URLS.QrPlane}
               size={QR_PLANE_SIZE}
               className="qr-plane"
               nonInteractive
               noLoop={false}
-            />
+            /> */}
           </div>
           {!isQrMounted && <div className="qr-loading"><Loading /></div>}
         </div>
