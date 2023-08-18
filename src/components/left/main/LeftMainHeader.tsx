@@ -32,7 +32,7 @@ import { isChatArchived } from '../../../global/helpers';
 import useLang from '../../../hooks/useLang';
 import useConnectionStatus from '../../../hooks/useConnectionStatus';
 import { useHotkeys } from '../../../hooks/useHotkeys';
-import { getPromptInstall } from '../../../util/installPrompt';
+// import { getPromptInstall } from '../../../util/installPrompt';
 import captureEscKeyListener from '../../../util/captureEscKeyListener';
 import useLeftHeaderButtonRtlForumTransition from './hooks/useLeftHeaderButtonRtlForumTransition';
 import useAppLayout from '../../../hooks/useAppLayout';
@@ -111,7 +111,7 @@ const LeftMainHeader: FC<OwnProps & StateProps> = ({
   areChatsLoaded,
   hasPasscode,
   isAuthRememberMe,
-  canInstall,
+  // canInstall,
   archiveSettings,
 }) => {
   const {
@@ -354,17 +354,20 @@ const LeftMainHeader: FC<OwnProps & StateProps> = ({
           Switch to K Version
         </MenuItem>
       )}
-      {canInstall && (
+      {/* {canInstall && (
         <MenuItem
           icon="install"
           onClick={getPromptInstall()}
         >
           Install App
         </MenuItem>
-      )}
+      )} */}
     </>
   ), [
-    animationLevel, archivedUnreadChatsCount, canInstall, handleAnimationLevelChange, handleBugReportClick, lang,
+    // animationLevel, archivedUnreadChatsCount, canInstall, handleAnimationLevelChange, handleBugReportClick, lang,
+    // handleChangelogClick, handleDarkModeToggle, handleOpenTipsChat, handleSelectSaved, handleSwitchToWebK,
+    // onSelectArchived, onSelectContacts, onSelectSettings, theme, withOtherVersions, archiveSettings,
+    animationLevel, archivedUnreadChatsCount, handleAnimationLevelChange, handleBugReportClick, lang,
     handleChangelogClick, handleDarkModeToggle, handleOpenTipsChat, handleSelectSaved, handleSwitchToWebK,
     onSelectArchived, onSelectContacts, onSelectSettings, theme, withOtherVersions, archiveSettings,
   ]);
