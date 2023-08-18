@@ -1,7 +1,7 @@
 import type { ApiLimitType } from './global/types';
 
 // export const APP_NAME = process.env.APP_NAME || 'Teamgram WebZ';
-export const APP_NAME = process.env.APP_NAME || 'Start WebZ';
+export const APP_NAME = process.env.APP_NAME || 'Start Web';
 
 export const APP_VERSION = process.env.APP_VERSION!;
 export const RELEASE_DATETIME = process.env.RELEASE_DATETIME;
@@ -284,7 +284,6 @@ export const GROUP_CALL_DEFAULT_VOLUME = 100 * GROUP_CALL_VOLUME_MULTIPLIER;
 export const GROUP_CALL_THUMB_VIDEO_DISABLED = true;
 
 export const DEFAULT_LIMITS: Record<ApiLimitType, readonly [number, number]> = {
-  // uploadMaxFileparts: [4000, 8000],
   uploadMaxFileparts: [4000, 8000],
   stickersFaved: [5, 10],
   savedGifs: [200, 400],
